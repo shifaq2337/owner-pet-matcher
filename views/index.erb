@@ -22,5 +22,31 @@
       <h1>Hello World!</h1>
     </div>
     
+    <form method="post" action="/result"> 
+      <h1>Enter your preferrences for your ideal pet:</h1>
+      <br> 
+     
+      Type of Animal: 
+      <form action="/action_page.php">
+        <select name="pet_type">
+          <option value="dogs">Dogs</option>
+          <option value="cats">Cats</option>
+          <option value="rabbits">Rabbits</option>
+          <option value="small-and-furry">Small & Furry One</option>
+          <option value="scales-fins-others">Scales, Fins, & Others</option>
+          <option value="birds">Birds</option>
+          <option value="horses">Horses</option>
+          <option value="barnyard">Barnyard Animals</option>
+        </select>
+      </form>
+      <br>
+  
+      Location:
+      <form>
+         <input type="text" name="location" value="zipcode">
+      </form>
+      <br>
+    
+    </form>
   </body>
 </html>
