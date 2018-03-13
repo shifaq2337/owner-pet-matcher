@@ -18,8 +18,19 @@
   </head>
   <body>
     
-    <div class="container-fluid">
-      <h1>Hello World!</h1>
+    <div class="container">
+      <form method="POST" action="/">
+        <h2>Find a Pet based on its personality here!</h2>
+        <input list="options">
+          <datalist id="browsers">
+            <option value="playful">
+            <option value="faithful">
+            <option value="eager">
+            <option value="sweet">
+            <option value="friendly">
+          </datalist> 
+      <input type="submit">
+      </form>
     </div>
     
     <form method="post" action="/result"> 
