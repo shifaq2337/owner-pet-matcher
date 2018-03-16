@@ -15,7 +15,6 @@ class ApplicationController < Sinatra::Base
     @user_pref_personality = params[:personality]
     @pets_matched = Pets.new(@user_pref_personality)
     @pets_matched.get_pet_files
-
     
     erb :result
   end
