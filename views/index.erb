@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>title</title>
+    <title>Enter the wanted personality</title>
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery -->
@@ -17,47 +17,14 @@
     <script src="js/script.js"></script>
   </head>
   <body>
-    
-    <div class="container">
-      <form method="POST" action="/">
-        <h2>Find a Pet based on its personality here!</h2>
-        <input list="options">
-          <datalist id="browsers">
-            <option value="playful">
-            <option value="faithful">
-            <option value="eager">
-            <option value="sweet">
-            <option value="friendly">
-          </datalist> 
-      <input type="submit">
-      </form>
+      
+      <div class="container">
+        <form method="post" action="/result">
+          <h1>Enter your personality preferences for your ideal pet:</h1><br> 
+          <input type="text" name="personality" size="50"><br><br>
+          <input type="submit" value="Submit"> 
+        </form>
     </div>
     
-    <form method="post" action="/result"> 
-      <h1>Enter your preferrences for your ideal pet:</h1>
-      <br> 
-     
-      Type of Animal: 
-      <form action="/action_page.php">
-        <select name="pet_type">
-          <option value="dogs">Dogs</option>
-          <option value="cats">Cats</option>
-          <option value="rabbits">Rabbits</option>
-          <option value="small-and-furry">Small & Furry One</option>
-          <option value="scales-fins-others">Scales, Fins, & Others</option>
-          <option value="birds">Birds</option>
-          <option value="horses">Horses</option>
-          <option value="barnyard">Barnyard Animals</option>
-        </select>
-      </form>
-      <br>
-  
-      Location:
-      <form>
-         <input type="text" name="location" value="zipcode">
-      </form>
-      <br>
-    
-    </form>
   </body>
 </html>

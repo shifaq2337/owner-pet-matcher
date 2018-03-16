@@ -9,7 +9,9 @@ class ApplicationController < Sinatra::Base
   get '/' do
     erb :index
   end
-  post '/' do
-    
+  
+  post '/result' do
+    erb.index
+    # puts params 
   end
 end

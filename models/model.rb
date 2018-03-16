@@ -2,25 +2,30 @@ require 'net/http'
 require 'json'
 require 'pp'
 
-
-
-url = 'http://api.petfinder.com/pet.find?format=json&output=full&location=11209&'
-#url = 'http://api.petfinder.com/pet.getRandom?format=json&output=full&'
+#
+ 
 uri = URI(url)
 response = Net::HTTP.get(uri)
 result = JSON.parse(response)
 pets_info = result["petfinder"]["pets"]["pet"]
+# pp pets_info
 pets_info_copy = Array.new(pets_info)
 puts pets_info_copy[1]["description"]["$t"]
-puts pets_info_copy[1]["description"]["$t"].include?'playful'
+# puts pets_info_copy[1]["description"]["$t"].include?("personality")
+
+# if pets_info_copy[1]["description"]["$t"].include?'playful'
+#     puts "I FOUND YOUR PET!"
+# else
+#     puts "Sorry, a pet cannot be found based the description that you gave just now."
+# end
 
 #loop does not work b/c info inside description becomes blank
-#i = 0
-#n = 25
-#until i > n do
-#    puts result["petfinder"]["pets"]["pet"][i]
-#    i+=1
-#end
+# i = 0
+# n = 25
+# until i > n do
+#     puts result["petfinder"]["pets"]["pet"]["description"]#[i]
+#     i+=1
+# end
 
 
 =begin
