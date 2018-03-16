@@ -12,11 +12,14 @@ class ApplicationController < Sinatra::Base
   end
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   post '/result' do
     erb.index
     # puts params 
 =======
+=======
+>>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
 =======
 >>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
   post '/result' do
@@ -28,6 +31,9 @@ class ApplicationController < Sinatra::Base
     
     erb :result
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
+=======
 >>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
 =======
 >>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
