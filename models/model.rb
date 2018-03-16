@@ -2,9 +2,8 @@ require 'net/http'
 require 'json'
 require 'pp'
 
-
 class Pets 
-   attr_reader :personality 
+   attr_reader :personality
     
    def initialize(personality) 
         @personality = personality

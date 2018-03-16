@@ -11,11 +11,14 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 <<<<<<< HEAD
+<<<<<<< HEAD
   
   post '/result' do
     erb.index
     # puts params 
 =======
+=======
+>>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
   post '/result' do
     puts params
     @user_pref_personality = params[:personality]
@@ -24,6 +27,9 @@ class ApplicationController < Sinatra::Base
 
     
     erb :result
+<<<<<<< HEAD
+>>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
+=======
 >>>>>>> 34e3b9863883a13bbdf94121a9547dd962f2f198
   end
 end
