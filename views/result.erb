@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lyrics Playlist</title>
+    <!-- bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- custom JS -->
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Results Matching <%= @pets_matched.personality %></h1>
+    </div>
+    <%= .each do |descrips, sec_value_descrip|
+                    pets = ["#{sec_value_descrip[0]}" => "#{sec_value_descrip[1]}"]
+                end    %>
+    <div class="row">
+      <div class="col-sm-12">
+      </div>
+    </div>
+  </body>
+</html>

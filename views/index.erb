@@ -19,45 +19,13 @@
   <body>
     
     <div class="container">
-      <form method="POST" action="/">
-        <h2>Find a Pet based on its personality here!</h2>
-        <input list="options">
-          <datalist id="browsers">
-            <option value="playful">
-            <option value="faithful">
-            <option value="eager">
-            <option value="sweet">
-            <option value="friendly">
-          </datalist> 
-      <input type="submit">
+      <form method="POST" action="/result">
+
+        <h2>Enter personality here!</h2>
+        <input type="text" name="personality">
+        <input type="submit">
       </form>
     </div>
     
-    <form method="post" action="/result"> 
-      <h1>Enter your preferrences for your ideal pet:</h1>
-      <br> 
-     
-      Type of Animal: 
-      <form action="/action_page.php">
-        <select name="pet_type">
-          <option value="dogs">Dogs</option>
-          <option value="cats">Cats</option>
-          <option value="rabbits">Rabbits</option>
-          <option value="small-and-furry">Small & Furry One</option>
-          <option value="scales-fins-others">Scales, Fins, & Others</option>
-          <option value="birds">Birds</option>
-          <option value="horses">Horses</option>
-          <option value="barnyard">Barnyard Animals</option>
-        </select>
-      </form>
-      <br>
-  
-      Location:
-      <form>
-         <input type="text" name="location" value="zipcode">
-      </form>
-      <br>
-    
-    </form>
   </body>
 </html>
